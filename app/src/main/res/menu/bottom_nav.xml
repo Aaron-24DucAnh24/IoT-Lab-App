@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sensors_item" android:title="Home" android:icon="@drawable/item_ic"/>
+    <item android:title="Devices" android:id="@+id/devices_item" android:icon="@drawable/item_ic"/>
+    <item android:title="Settings" android:id="@+id/logs_item" android:icon="@drawable/item_ic"/>
+</menu>

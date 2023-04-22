@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="aaron.iot.iot_lab_app.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/devices"
+        android:name="aaron.iot.iot_lab_app.devices"
+        android:label="fragment_devices"
+        tools:layout="@layout/fragment_devices" />
+
+    <fragment
+        android:id="@+id/logs"
+        android:name="aaron.iot.iot_lab_app.logs"
+        android:label="fragment_logs"
+        tools:layout="@layout/fragment_logs" />
+
+    <fragment
+        android:id="@+id/sensors"
+        android:name="aaron.iot.iot_lab_app.sensors"
+        android:label="fragment_sensors"
+        tools:layout="@layout/fragment_sensors" />
+
+</navigation>

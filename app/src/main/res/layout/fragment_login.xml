@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/bigIntro"
+        android:layout_width="363dp"
+        android:layout_height="86dp"
+        android:text="WELCOME BACK TO SMART FARM"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <TextView
+        android:id="@+id/smallIntro"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:text="Let's sign you in"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
+        android:background="@drawable/input_container"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textColorHint="@color/silver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        android:focusedByDefault="true"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="364dp"
+        android:layout_height="53dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/silver"
+        android:background="@drawable/input_container"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557"
+        android:focusedByDefault="false"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="364dp"
+        android:layout_height="62dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721"
+        android:onClick="handleLogin"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

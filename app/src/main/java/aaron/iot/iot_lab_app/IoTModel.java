@@ -14,7 +14,7 @@ public class IoTModel {
     public String auto_mode = "0";
     public String connection;
     public String ai_value = "";
-    boolean conn;
+    public boolean conn;
     public int gateway_fre;
     public int uart_fre;
     public int min_humi = 10;

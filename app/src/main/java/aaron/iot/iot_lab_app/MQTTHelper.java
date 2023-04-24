@@ -2,9 +2,7 @@ package aaron.iot.iot_lab_app;
 
 import android.content.Context;
 import android.util.Log;
-
 import androidx.annotation.NonNull;
-
 import org.eclipse.paho.android.service.MqttAndroidClient;
 import org.eclipse.paho.client.mqttv3.DisconnectedBufferOptions;
 import org.eclipse.paho.client.mqttv3.IMqttActionListener;
@@ -14,7 +12,6 @@ import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
-
 import java.nio.charset.Charset;
 import java.util.concurrent.ThreadLocalRandom;
 
